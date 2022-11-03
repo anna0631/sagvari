@@ -12,10 +12,7 @@
 		<link href="/css/style_alap.css" rel="stylesheet" type="text/css">
 	</head>
 <style>
-    body{
-        background: url("IMG_1105.jpg");
-    }
-	div{
+    	div{
 		text-align: center;
     color:black;
     text-decoration: none;
@@ -26,9 +23,14 @@
     border-width: 2px;
     border-radius: 12%;
     border-color: rgb(167, 188, 227);
-    
+    display: flex;
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgb(6, 88, 60);
 }
-	a:hover{
+    a:hover{
     box-shadow: 1px 1px 4px black inset;
     background-color: rgb(163, 219, 236);
     text-align: center;
@@ -38,6 +40,9 @@
     cursor: pointer;
     border-radius: 9px;
 	}
+    body{
+        background: url("IMG_1105.jpg");
+    }
     h1{
         text-align: center;
         color: rgb(102, 133, 160);
