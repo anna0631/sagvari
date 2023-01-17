@@ -1,0 +1,34 @@
+<body>
+    <div id="x">ezt fogom animálni</div>
+</body>
+<style>
+    #x {
+        display: inline-block;
+        background-color: aqua;
+        padding: 10;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px black;
+        position: fixed;
+        left: 50px;
+        top: 50px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: 1.5s;
+        color: rgb(57, 38, 233)
+        
+    }
+</style>
+<script>
+    el = document.getElementById("x")
+    setInterval(() => {
+        el.style.top = Math.random()*300+50
+        el.style.left = Math.random()*300+50
+        el.style.backgroundColor=`rgb(${
+            Math.random()*256
+        },${
+            Math.random()*256
+        },${
+            Math.random()*256
+        })`
+    }, 2000);
+</script>
